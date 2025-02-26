@@ -176,7 +176,7 @@
           >
             <div class="border-2 p-6 w-full h-24 rounded-xl bg-blue-900 flex items-center gap-4">
                 <div class="w-full">
-                    <input
+                    <input id="password"
                   type="text"
                   class="w-full h-full p-4 placeholder:font-semibold rounded-lg focus:outline-none"
                   placeholder="यो तपाईको पास्वर्ड हो।"
@@ -184,7 +184,7 @@
                 />
                 </div>
                 
-                <button class="bg-blue-600 text-white p-4 rounded-lg w-1/2 hover:scale-105 transition-all duration-300 ease-in-out ">
+                <button onclick="generateNepaliPasswords()" class="bg-blue-600 text-white p-4 rounded-lg w-1/2 hover:scale-105 transition-all duration-300 ease-in-out ">
                     जेनेरेट 
                 </button>
               
@@ -195,5 +195,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

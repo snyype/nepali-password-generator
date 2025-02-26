@@ -1,6 +1,5 @@
 function generateNepaliPasswords(){
-    const para = document.getElementById('push-here');
-    const latest = document.getElementById('latest');
+    const passwordbox = document.getElementById('password');
 
     var nepaliPasswords = [];
     var nepaliChars = "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह";
@@ -39,7 +38,6 @@ function generateNepaliPasswords(){
         nepaliPasswords.push(password);
     }
 
-    para.innerHTML = nepaliPasswords.join('<br>');
-    latest.innerHTML = nepaliPasswords[0];
+    passwordbox.value = nepaliPasswords[0]; 
 
 }
