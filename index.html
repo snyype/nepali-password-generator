@@ -123,13 +123,15 @@
                 <div class="w-full">
                     <label for="">Generated Passwords</label>
                     <div>
-                        <p></p>
+                        <p id="push-here"></p>
                     </div>
                 </div>
             </div>
-            <div class="border-2 border-red-500 w-[35%] h-60" ></div>
+            <div class="border-2 border-red-500 w-[35%] h-60 p-2">
+                <input type="text" name="" id="latest" class="w-full p-2" value="" readonly>
+            </div>
             <div class="border-2 border-red-500 w-[45%] h-60">
-                <button id="generate-button" class="bg-red-600 rounded-lg p-2 text-white">Generate</button>
+                <button onclick="generateNepaliPasswords()" class="bg-red-600 rounded-lg p-2 text-white">Generate</button>
             </div>    
             </div>
             
